@@ -152,7 +152,7 @@ document.getElementById("gotohome").addEventListener("click", function () {
 
   document.getElementById("gotoabout").classList.remove("headercoloron");
   document.getElementById("gotoworks").classList.remove("headercoloron");
-  document.getElementById("gotopixels").classList.remove("headercoloron");
+  // document.getElementById("gotopixels").classList.remove("headercoloron");
   document.getElementById("gotocontact").classList.remove("headercoloron");
   this.classList.add("headercoloron");
 });
@@ -166,7 +166,7 @@ document.getElementById("gotoabout").addEventListener("click", function () {
 
   document.getElementById("gotohome").classList.remove("headercoloron");
   document.getElementById("gotoworks").classList.remove("headercoloron");
-  document.getElementById("gotopixels").classList.remove("headercoloron");
+  // document.getElementById("gotopixels").classList.remove("headercoloron");
   document.getElementById("gotocontact").classList.remove("headercoloron");
   this.classList.add("headercoloron");
 
@@ -204,63 +204,63 @@ document.getElementById("gotoworks").addEventListener("click", function () {
 
   document.getElementById("gotoabout").classList.remove("headercoloron");
   document.getElementById("gotohome").classList.remove("headercoloron");
-  document.getElementById("gotopixels").classList.remove("headercoloron");
+  // document.getElementById("gotopixels").classList.remove("headercoloron");
   document.getElementById("gotocontact").classList.remove("headercoloron");
   this.classList.add("headercoloron");
 });
 
-document.getElementById("gotopixels").addEventListener("click", function () {
-  $("#main").scrollTop(0);
-  document.getElementById("home").style.display = "none";
-  document.getElementById("about").style.display = "none";
-  document.getElementById("works").style.display = "none";
-  document.getElementById("pixels").style.display = "flex";
-  document.getElementById("contact").style.display = "none";
+// document.getElementById("gotopixels").addEventListener("click", function () {
+//   $("#main").scrollTop(0);
+//   document.getElementById("home").style.display = "none";
+//   document.getElementById("about").style.display = "none";
+//   document.getElementById("works").style.display = "none";
+//   document.getElementById("pixels").style.display = "flex";
+//   document.getElementById("contact").style.display = "none";
 
-  document.getElementById("gotoabout").classList.remove("headercoloron");
-  document.getElementById("gotohome").classList.remove("headercoloron");
-  document.getElementById("gotoworks").classList.remove("headercoloron");
-  document.getElementById("gotocontact").classList.remove("headercoloron");
-  this.classList.add("headercoloron");
+//   document.getElementById("gotoabout").classList.remove("headercoloron");
+//   document.getElementById("gotohome").classList.remove("headercoloron");
+//   document.getElementById("gotoworks").classList.remove("headercoloron");
+//   document.getElementById("gotocontact").classList.remove("headercoloron");
+//   this.classList.add("headercoloron");
 
-  $(function () {
-    $(".img-w").each(function () {
-      $(this).wrap("<div class='img-c'></div>");
-      let imgSrc = $(this).find("img").attr("src");
-      $(this).css("background-image", "url(" + imgSrc + ")");
-    });
+//   $(function () {
+//     $(".img-w").each(function () {
+//       $(this).wrap("<div class='img-c'></div>");
+//       let imgSrc = $(this).find("img").attr("src");
+//       $(this).css("background-image", "url(" + imgSrc + ")");
+//     });
 
-    $(".img-c").click(function () {
-      let w = $(this).outerWidth();
-      let h = $(this).outerHeight();
-      let x = $(this).offset().left;
-      let y = $(this).offset().top;
+//     $(".img-c").click(function () {
+//       let w = $(this).outerWidth();
+//       let h = $(this).outerHeight();
+//       let x = $(this).offset().left;
+//       let y = $(this).offset().top;
 
-      $(".active").not($(this)).remove();
-      let copy = $(this).clone();
-      copy
-        .insertAfter($(this))
-        .height(h)
-        .width(w)
-        .delay(500)
-        .addClass("active");
-      $(".active").css("top", y);
-      $(".active").css("left", x);
+//       $(".active").not($(this)).remove();
+//       let copy = $(this).clone();
+//       copy
+//         .insertAfter($(this))
+//         .height(h)
+//         .width(w)
+//         .delay(500)
+//         .addClass("active");
+//       $(".active").css("top", y);
+//       $(".active").css("left", x);
 
-      setTimeout(function () {
-        copy.addClass("positioned");
-      }, 0);
-    });
-  });
+//       setTimeout(function () {
+//         copy.addClass("positioned");
+//       }, 0);
+//     });
+//   });
 
-  $(document).on("click", ".img-c.active", function () {
-    let copy = $(this);
-    copy.removeClass("positioned active").addClass("postactive");
-    setTimeout(function () {
-      copy.remove();
-    }, 500);
-  });
-});
+//   $(document).on("click", ".img-c.active", function () {
+//     let copy = $(this);
+//     copy.removeClass("positioned active").addClass("postactive");
+//     setTimeout(function () {
+//       copy.remove();
+//     }, 500);
+//   });
+// });
 
 document.getElementById("gotocontact").addEventListener("click", function () {
   $("#main").scrollTop(0);
@@ -272,7 +272,7 @@ document.getElementById("gotocontact").addEventListener("click", function () {
 
   document.getElementById("gotoabout").classList.remove("headercoloron");
   document.getElementById("gotoworks").classList.remove("headercoloron");
-  document.getElementById("gotopixels").classList.remove("headercoloron");
+  // document.getElementById("gotopixels").classList.remove("headercoloron");
   document.getElementById("gotohome").classList.remove("headercoloron");
   this.classList.add("headercoloron");
 });

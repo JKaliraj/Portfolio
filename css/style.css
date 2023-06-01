@@ -246,8 +246,8 @@ body {
 
   .about__content>img.meNow {
     width: 800px;
-    height: 500px;
-    /* object-fit: cover; */
+    height: 95vh;
+    object-fit: contain;
     margin-bottom: 70px;
     border-radius: 3px;
     /* filter: blur(10px); */
@@ -317,9 +317,14 @@ body {
     transition: all 0.5s ease;
     margin: 10px 0 10px 50px;
   }
-
+  
+  #works > h1{
+    max-width: 90%;
+    margin: 10px 0 10px 50px;
+    color: #b3a577;
+  }
   #works .content h1 {
-    font-size: 82px;
+    font-size: 52px;
     overflow: hidden;
   }
 
@@ -349,6 +354,7 @@ body {
 
   #works .image:hover .content h1 {
     color: #121416;
+    opacity: 0.2;
   }
 
   #works .image:hover .content h3 {
@@ -595,8 +601,8 @@ body {
   }
 
   .links>a>img {
-    width: 40px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
 
   .links>a:hover {
@@ -648,7 +654,7 @@ body {
   .about__content>img.meNow {
     width: 100%;
     height: 300px;
-    /* object-fit: cover; */
+    object-fit: cover;
     margin-bottom: 70px;
     border-radius: 3px;
     /* filter: blur(10px); */
@@ -704,7 +710,7 @@ body {
   }
 
   #works .content {
-    max-height: 90%;
+    max-height: 100%;
     max-width: 90%;
     display: flex;
     flex-direction: column;
@@ -715,10 +721,11 @@ body {
   }
 
   #works .content h1 {
-    font-size: 38px;
+    font-size: 28px;
     overflow: hidden;
+    line-height: 32px;
   }
-
+  
   #works .image {
     position: relative;
     height: 210px;
