@@ -247,7 +247,8 @@ body {
   .about__content>img.meNow {
     width: 500px;
     height: 400px;
-    object-fit: contain;
+    object-position: center top;  
+    object-fit: cover;
     margin-bottom: 70px;
     border-radius: 3px;
     /* filter: blur(10px); */
