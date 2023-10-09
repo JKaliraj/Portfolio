@@ -79,12 +79,13 @@ body {
     font-size: 32px !important;
     transition: 0.8s;
     cursor: pointer;
+    display: none;
   }
 
   .navbar:hover {
     cursor: pointer;
     color: #b3a577;
-    /* transform: rotateY(180deg); */
+    transform: rotateY(180deg);
   }
 
   .header>nav {
@@ -483,6 +484,7 @@ body {
     font-size: 32px !important;
     transition: 0.8s;
     cursor: pointer;
+    display: block;
   }
 
   .header nav {

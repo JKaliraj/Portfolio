@@ -114,7 +114,7 @@ function navbar() {
     if (detectDeviceType() == "Mobile") {
       document.getElementById("nav").style.transform = "translateX(0px)";
     } else {
-      document.getElementById("nav").style.display = "block";
+      document.getElementById("nav").style.display = "none";
     }
 
     document.addEventListener("click", function handleClickOutsideBox(event) {
