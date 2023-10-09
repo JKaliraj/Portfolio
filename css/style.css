@@ -163,7 +163,7 @@ body {
   }
 
   .content>p {
-    text-align: left;
+    text-align: justify;
     font-size: 52px;
     font-weight: 700;
     color: white;
