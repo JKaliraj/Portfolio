@@ -276,3 +276,8 @@ document.getElementById("gotocontact").addEventListener("click", function () {
   document.getElementById("gotohome").classList.remove("headercoloron");
   this.classList.add("headercoloron");
 });
+
+function openDemo(url) {
+  var url = `https://${url}`;
+  window.open(url, '_blank');
+}

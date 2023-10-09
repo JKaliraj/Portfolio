@@ -89,7 +89,7 @@ body {
 
   .header>nav {
     z-index: 1;
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 60px;
     right: 100px;
